@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物列表</title>
+		<script src="js/public-f.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public_data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/clean.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+	</head>
+	<body>
+		<!-- 头部三个 -->
+		<div class="totalHead">
+			<div class="nav-top">
+				<div class="container">
+					<!-- 导航栏 -->
+					<div class="list">
+						<a href="">小米商城</a>
+						<span>|</span>
+						<a href="">MIUI</a>
+						<span>|</span>
+						<a href="">IoT</a>
+						<span>|</span>
+						<a href="">云服务</a>
+						<span>|</span>
+						<a href="">天星数科</a>
+						<span>|</span>
+						<a href="">有品</a>
+						<span>|</span>
+						<a href="">小爱开放平台</a>
+						<span>|</span>
+						<a href="">企业团购</a>
+						<span>|</span>
+						<a href="">资质证照</a>
+						<span>|</span>
+						<a href="">协议规则</a>
+						<span>|</span>
+						<a href="" class="download">
+							下载app
+							<span href=" "><!-- a链接不能套a链接 -->
+								<img src="img/download.png" width="90" height="90">
+								<span>小米商城APP</span>
+							</span>
+						</a>
+						<span>|</span>
+						<a href="">智能生活</a>
+						<span>|</span>
+						<a href="">Select Location</a>
+					</div>
+					<!-- 购物车 -->
+					<div class="buy">
+						<a class="hov" href="">
+							<i class="icon">&#xe652</i>
+							<span class="cartText">购物车</span>
+							<span class="cartNum">（0）</span>
+						</a>
+						<!-- 购物车隐藏区域 -->
+						<div class="cartHide">
+							<div></div><!-- 占位 -->
+							<div class="cart_logo"></div>
+							<div class="cart_text">购物车中还没有商品，赶紧选购吧！</div>
+						</div>
+					</div>
+					<!-- 登录注册 -->
+					<div class="sheet">
+						<a href="" class="login">登录</a>
+						<span>|</span>
+						<a href="" class="register">注册</a>
+						<span>|</span>
+						<a href="">消息通知</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav-mid">
+				<div class="container">
+					<!-- logo -->
+					<div class="logo">
+						<a href=""></a>
+					</div>
+					<!-- 动图 导航栏 -->
+					<div class="nav">
+						<ul>
+							<li class="perch">
+								<a href="" class="total-list-title">
+									<span>全部商品分类</span>
+								</a>
+								<div class="perch-item"></div>
+							</li>
+							<li>
+								<a href="">
+									<span>小米手机</span>
+								</a>
+								<!-- 导航栏 下拉列表 -->
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list phone"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>Redmi红米</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list red"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>电视</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list tel"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>笔记本</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list note"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>家电</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list elec"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>路由器</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list web"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>智能硬件</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list smart"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>服务</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>社区</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 搜索框 -->
+					<div class="select">
+						<input type="submit" class="icon" value="&#xe619" />
+						<input type="text" class="text" placeholder="" />
+						<ul class="list"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主体 -->
+		
+		<div class="page-main">
+			<!-- 轮播部分 -->
+			<div class="slide-box">
+				<div class="slide-show">
+					<!-- 轮播图 -->
+					<div class="slide-img">
+						<a href="" class="act"><img src="img/list/lb1.jpg" ></a>
+						<a href=""><img src="img/list/lb2.jpg" ></a>
+						<a href=""><img src="img/list/lb3.jpg" ></a>
+					</div>
+					<!-- 小按钮 -->
+					<div class="img-smbtn">
+						<span class="act"></span>
+						<span></span>
+						<span></span>
+					</div>
+					<!-- 左右按钮 -->
+					<div class="Show-btn lft"></div>
+					<div class="Show-btn rgt"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="main-box">
+					<div class="title">热卖推荐</div>
+					<div class="section-box">
+						<div class="section">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="container">
+				<!-- icon区域 -->
+				<div class="top">
+					<ul>
+						<li>
+							<a href="">
+								<i class="icon">&#xe629</i>
+								<span>预约维修服务</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe60e</i>
+								<span>7天无理由退货</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe606</i>
+								<span>15天免费换货</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe624</i>
+								<span>满99元包邮</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe653</i>
+								<span>520余家售后网点</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 信息列表 -->
+				<div class="bot">
+					<div class="help">
+						<ul>
+							<div>帮助中心</div>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">购物指南</a></li>
+							<li><a href="">订单操作</a></li>
+						</ul>
+						<ul>
+							<div>服务支持</div>
+							<li><a href="">售后政策</a></li>
+							<li><a href="">自助服务</a></li>
+							<li><a href="">相关下载</a></li>
+						</ul>
+						<ul>
+							<div>线下门店</div>
+							<li><a href="">小米之家</a></li>
+							<li><a href="">服务网点</a></li>
+							<li><a href="">授权体验店</a></li>
+						</ul>
+						<ul>
+							<div>关于小米</div>
+							<li><a href="">了解小米</a></li>
+							<li><a href="">加入小米</a></li>
+							<li><a href="">投资者关系</a></li>
+							<li><a href="">企业社会责任</a></li>
+							<li><a href="">廉洁举报</a></li>
+						</ul>
+						<ul>
+							<div>关注我们</div>
+							<li><a href="">新浪微博</a></li>
+							<li><a href="">官方微信</a></li>
+							<li><a href="">联系我们</a></li>
+							<li><a href="">公益基金会</a></li>
+						</ul>
+						<ul>
+							<div>特色服务</div>
+							<li><a href="">F码通道</a></li>
+							<li><a href="">礼物码</a></li>
+							<li><a href="">防伪查询</a></li>
+						</ul>
+					</div>
+					<!-- 热线 -->
+					<div class="hotLine">
+						<ul>
+							<li>400-100-5678</li>
+							<li>8:00-18:00（仅收市话费）</li>
+							<li>
+								<input type="button" value="&#xe61b 人工客服" class="icon"/>
+							</li>
+							<li class="logo">
+								<span>关注小米：</span>
+								<a class="wb" href=""></a>
+								<a class="wx" href=""></a>
+								<img src="img/wx-img.png" >
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 版权信息 -->
+		<div class="copy">
+			<div class="container">
+				<div class="logo">
+					<img src="img/lo.PNG" >
+				</div>
+				<div class="copyRight">
+					<!-- 脚部导航 -->
+					<div class="nav">
+						<a href="">小米商城</a>
+						<span>|</span>
+						<a href="">MIUI</a>
+						<span>|</span>
+						<a href="">米家</a>
+						<span>|</span>
+						<a href="">米聊</a>
+						<span>|</span>
+						<a href="">多看</a>
+						<span>|</span>
+						<a href="">游戏</a>
+						<span>|</span>
+						<a href="">政企服务</a>
+						<span>|</span>
+						<a href="">小米天猫店</a>
+						<span>|</span>
+						<a href="">小米集团隐私政策</a>
+						<span>|</span>
+						<a href="">小米公司儿童信息保护规则</a>
+						<span>|</span>
+						<a href="">小米商城隐私政策</a>
+						<span>|</span>
+						<a href="">小米商城用户协议</a>
+						<span>|</span>
+						<a href="">问题反馈</a>
+						<span>|</span>
+						<a href="">Select Location</a>
+					</div>
+					<!-- 版权信息 -->
+					<div class="cpr">
+						<ul>
+							<li><a href="">© mi.com</a></li>
+							<li>京ICP证110507号</li>
+							<li><a href="">京ICP备10046444号</a></li>
+							<li><a href="">京公网安备11010802020134号</a></li>
+							<li><a href="">京网文[2020]0276-042号</a></li>
+						</ul>
+						<ul>
+							<li><a href="">（京）网械平台备字（2018）第00005号</a></li>
+							<li><a href="">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a></li>
+							<li><a href="">营业执照</a></li>
+							<li><a href="">医疗器械质量公告</a></li>
+						</ul>
+						<ul>
+							<li><a href="">增值电信业务许可证</a></li>
+							<li>网络食品经营备案</li>
+							<li>京食药网食备202010048</li>
+							<li><a href="">食品经营许可证</a></li>
+						</ul>
+						<ul>
+							<li>违法和不良信息举报电话：171-5104-4404</li>
+							<li><a href="">知识产权侵权投诉</a></li>
+							<li>本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pic">
+					<div>
+						<img src="img/truste.png" width="83px" height="28px">
+					</div>
+					<div>
+						<img src="img/v-logo-2.png" width="83px" height="28px">
+					</div>
+					<div>
+						<img src="img/v-logo-1.png" width="83px" height="28px">
+					</div>
+					<div>
+						<img src="./img/ba10428a4f9495ac310fd0b5e0cf8370.png" width="83px" height="28px">
+					</div>
+					<div class="footer_log">
+						<img src="./img/ad.png" >
+					</div>
+				</div>
+				<div class="footer_logo">
+					
+				</div>
+			</div>
+		</div>
+		
+		<!-- 固定侧边栏 -->
+		<div class="sidebar">
+			<a href="" class="items phone">
+				<div class="icon icon-image">
+					<img src="img/fix1.png" class="common" width="20" height="20px">
+					<img src="img/fix2.png" class="hov" width="20" height="20px">
+				</div>
+				<div class="text_content">
+					<img src="img/saomc.png" >
+					<span>扫码领取新</span>
+					<span>人百元礼包</span>
+				</div>
+			</a>
+			<a href="" class="items person-cen">
+				<div class="icon">
+					<img src="img/fix3.png" class="common" width="20" height="20px">
+					<img src="img/fix4.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">个人中心</span>
+			</a>
+			<a href="" class="items">
+				<div class="icon">
+					<img src="img/fix5.png" class="common" width="20" height="20px">
+					<img src="img/fix6.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">售后服务</span>
+			</a>
+			<a href="" class="items">
+				<div class="icon">
+					<img src="img/fix7.png" class="common" width="20" height="20px">
+					<img src="img/fix8.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">人工客服</span>
+			</a>
+			<a href="" class="items buy-car">
+				<div class="icon">
+					<img src="img/fix9.png" class="common" width="20" height="20px">
+					<img src="img/fix10.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">
+					购物车<span>(0)</span>
+				</span>
+			</a>
+			<a href="" class="items last">
+				<div class="icon">
+					<img src="img/totop.png" class="common" width="20" height="20px">
+					<img src="img/totop_hover.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">回顶部</span>
+			</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	color: #666;
+	font-size: 14px;
+	background-color: rgb(249,249,249);
+}
+
+
+
+.wrapper>.wrap{
+	padding-bottom: 20px;
+}
+.wrapper>.wrap>.layout{
+	width: 854px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.wrapper>.wrap>.layout>.n-frame{
+	background-color: white;
+	padding: 34px 34px 0;
+	min-height: 400px;
+}
+.layout>.n-frame>.logo_area{
+	padding-bottom: 40px;
+	display: block;
+}
+.layout>.n-frame>.logo_area>.milogo{
+	display: block;
+	width: 49px;
+	height: 48px;
+	margin: 0 auto;
+	cursor: default;
+	background-image: url(../img/login/milogo.png);
+}
+.layout>.n-frame>.title-item{
+	color: #333;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* 表单区域 */
+.layout>.n-frame .regbox{
+	width: 332px;
+	padding: 30px 0;
+	line-height: 20px;
+	margin: 0 auto;
+}
+.regbox .tit_normal{
+	padding-bottom: 5px;
+	color: #333333;
+}
+.regbox .listwrap_cry{
+	position: relative;
+}
+.regbox .listwrap_cry>.listtit>.tits{
+	height: 40px;
+	padding-left: 14px;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #e8e8e8;
+	color: #555;
+	cursor: pointer;
+}
+.regbox .listwrap_cry>.listtit>.tits .result-select{
+	display: inline-block;
+	width: 275px;
+	border-right: 1px solid #e8e8e8;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.regbox .listwrap_cry>.listtit>.tits .icon_cirarr{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0px 10px 0 8px;
+	vertical-align: middle;
+	background: url(../img/login/icon_user.png) no-repeat top left;
+}
+/* 国家列表 */
+/* 隐藏号码列表 */
+.regbox .listwrap_tel{
+	position: relative;
+}
+.country-container-box{
+	width: 330px;
+	background-color: white;
+	height: 270px;
+	line-height: 30px;
+	border: 1px solid #e8e8e8;
+	box-sizing: border-box;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: absolute;
+	top: 41px;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+.country-container-box>.country-container .search-code{
+	padding: 10px;
+}
+.country-container-box>.country-container .search-code-input{
+	width: 274px;
+	height: 22px;
+	line-height: 22px;
+	padding: 5px 10px 5px 10px;
+	display: block;
+	border: 1px solid #E0E0E0;
+	outline: none;
+}
+.country-container-box>.country-container .country-code>.contaier>.header{
+	background-color: #fcdecc;
+	padding-left: 10px;
+	margin-bottom: 6px;
+	line-height: 30px;
+	color: #ef5b00 !important;
+}
+.country-container-box .country-code>.contaier .record{
+	padding: 0 10px;
+	overflow: hidden;
+	color: #000000;
+	border-bottom: 1px solid #e0e0e0;
+	cursor: pointer;
+	line-height: 30px;
+}
+.country-container-box .country-code>.contaier .record:hover{
+	background-color: rgb(234,234,234);
+}
+.country-container-box .country-code>.contaier .record>span{
+	height: 30px;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 30px;
+}
+.country-container-box .country-code>.contaier .record>.record-code{
+	float: right;
+}
+
+
+.regbox .region_tip{
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.regbox .inputbg{
+	padding-bottom: 15px;
+}
+
+.regbox .listwrap_tel>.err_tip{
+	line-height: 20px;
+	font-size: 14px;
+	color: #f66;
+	display: none;
+}
+.regbox .listwrap_tel>.err_tip .icon_err{
+	width: 15px;
+	height: 15px;
+	margin: -1px 3px 0 0;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/login/icon_user.png) no-repeat top right;
+}
+
+
+.regbox .inputbg,
+.regbox .labelbox{
+	height: 42px;
+	line-height: 42px;
+	display: inline-block;
+}
+.regbox .labelbox{
+	border: 1px solid #e8e8e8;
+}
+
+/* 手机国家码 */
+.regbox .labelbox .cycode_box{
+	border-right: 1px solid #e8e8e8;
+	/* width: 70px; */
+	height: 42px;
+	float: left;
+}
+.regbox .inputbg .labelbox input{
+	outline: none;
+	border: 0;
+	float: right;
+	width: 230px;
+	height: 20px;
+	line-height: 20px;
+	padding: 10px 13px;
+	display: inline-block;
+	color: #333333;
+}
+.regbox .labelbox .cycode_box .tits{
+	width: 70px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #555555;
+	cursor: pointer;
+}
+.regbox .labelbox .cycode_box .tits>.icon_arrow{
+	position: absolute;
+	top: 21px;
+	left: 54px;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #9D9D9D rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+}
+
+
+
+/* 立即注册 */
+.regbox .fixed_bot>input{
+	background-color: #FF6700;
+	margin-top: 15px;
+	border: 1px solid rgba(186,186,186,.3);
+	color: #fff;
+	width: 330px;
+	height: 42px;
+	margin: auto;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	margin-top: 6px;
+	outline: none;
+}
+.regbox .fixed_bot>input:hover{
+	opacity: 0.7;
+}
+
+
+
+
+.layout>.n-frame .privacy_box{
+	text-align: center;
+	padding-top: 40px;
+	color: #9d9d9d;
+}
+.layout>.n-frame .privacy_box>.msg{
+	padding: 10px 0;
+	cursor: pointer;
+}
+.layout>.n-frame .privacy_box>.msg>a{
+	color: #333333;
+	font-weight: bold;
+	
+}
+
+
+
+
+
+/* 底部 */
+.custom_footer{
+	width: 1349px;
+	height: 80px;
+	margin: auto;
+	padding-top: -80px;
+	text-align: center;
+	color: #9d9d9d;
+	font-size: 14px;
+}
+.custom_footer a{
+	text-decoration: none;
+	color: #757575;
+	padding: 0 10px;
+	font-size: 14px;
+}
+.custom_footer>.footer_link>.footer_list{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.custom_footer>.footer_link>.footer_list .current{
+	color: #333333;
+}
+.custom_footer>.footer_link>.footer_list a:hover{
+	color: #333333;
+}
+.custom_footer>.footer_intro a{
+	margin: 0 -12px;
+}

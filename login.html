@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米账号-注册</title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public-f.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>	
+	<body>
+		<div class="wrapper">
+			<div class="wrap">
+				<div class="layout">
+					<div class="n-frame">
+						<div class="logo_area">
+							<a href="" class="milogo"></a>
+						</div>
+						<div class="title-item">
+							<p class="title-big">注册小米账号</p>
+						</div>
+						<div>
+							<!-- 表单部分 -->
+							<div class="regbox">
+								<div class="regbox_item">
+									<p class="tit_normal">国家/地区</p>
+									<div class="listwrap_cry">
+										<!-- 默认国家 -->
+										<div class="listtit">
+											<div class="tits">
+												<p class="result-select">中国</p>
+												<i class="icon_cirarr"></i>
+											</div>
+										</div>
+										<!-- 隐藏国家列表 -->
+										<div class="country-container-box">
+											<div class="country-container">
+												<div class="search-code">
+													<input type="text" class="search-code-input" autocomplete="off" />
+												</div>
+												<div class="country-code">
+													<div class="contaier countrycode-A">
+														<div class="header">A</div>
+														<ul class="list">
+															<li class="record">
+																<span class="record-country">阿富汗</span>
+																<span class="record-code"></span>
+															</li>
+															<li class="record">
+																<span class="record-country">阿尔巴尼亚</span>
+																<span class="record-code"></span>
+															</li>
+															<li class="record">
+																<span class="record-country">阿尔及利亚</span>
+																<span class="record-code"></span>
+															</li>
+														</ul>
+													</div>
+													<div class="contaier countrycode-B">
+														<div class="header">B</div>
+														<ul class="list">
+															<li class="record">
+																<span class="record-country">巴哈马</span>
+															</li>
+															<li class="record">
+																<span class="record-country">巴林</span>
+															</li>
+															<li class="record">
+																<span class="record-country">孟加拉国</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="region_tip">成功注册帐号后，国家/地区将不能被修改</div>
+									<!-- 手机号码 -->
+									<p class="tit_normal">手机号码</p>
+									<div class="listwrap_tel">
+										<div class="inputbg">
+											<label class="labelbox">
+												<input type="tel" name="phone" placeholder="请输入手机号码" autocomplete="off">
+												<div class="cycode_box">
+													<!-- 默认国家码 -->
+													<div class="reg-phone">
+														<div class="tits">
+															<p class="cycode_result">+86</p>
+															<i class="icon_arrow"></i>
+														</div>
+													</div>
+													<!-- 隐藏国家码列表 -->
+													<div class="country-container-box">
+														<div class="country-container">
+															<div class="search-code">
+																<input type="text" class="search-code-input" autocomplete="off" />
+															</div>
+															<div class="country-code">
+																<div class="contaier countrycode-A">
+																	<div class="header">A</div>
+																	<ul class="list">
+																		<li class="record">
+																			<span class="record-country">阿富汗</span>
+																			<span class="record-code">+93</span>
+																		</li>
+																		<li class="record">
+																			<span class="record-country">阿尔巴尼亚</span>
+																			<span class="record-code">+335</span>
+																		</li>
+																		<li class="record">
+																			<span class="record-country">阿尔及利亚</span>
+																			<span class="record-code">+213</span>
+																		</li>
+																	</ul>
+																</div>
+																<div class="contaier countrycode-B">
+																	<div class="header">B</div>
+																	<ul class="list">
+																		<li class="record">
+																			<span class="record-country">巴哈马</span>
+																			<span class="record-code">+1</span>
+																		</li>
+																		<li class="record">
+																			<span class="record-country">巴林</span>
+																			<span class="record-code">+973</span>
+																		</li>
+																		<li class="record">
+																			<span class="record-country">孟加拉国</span>
+																			<span class="record-code">+880</span>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</label>
+										</div>
+										<dv class="err_tip">
+											<div class="dis_box">
+												<i class="icon_err"></i>
+												<span class="con_err"></span>
+											</div>
+										</dv>
+									</div>
+									<!-- 错误信息 --><!-- 占位 -->
+									<div class="err_tip">
+										<i class="" class="err_log"></i>
+										<span class="err_con"></span>
+									</div>
+									<!-- 注册按钮 -->
+									<div class="fixed_bot">
+										<input type="submit" class="btnSub" value="立即注册" />
+									</div>
+								</div>
+							</div>
+							<!-- 隐私信息部分 -->
+							<div class="privacy_box">
+								<div class="msg">
+									<span>已阅读并同意：小米 </span>
+									<a href="">用户协议</a>
+									<span>和</span>
+									<a href="">隐私政策</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="custom_footer">
+			<div class="footer_link">
+				<ul class="footer_list">
+					<li>
+						<a href="" class="list_li current">简体</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">繁体</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">English</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">常见问题</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">隐私政策</a>
+					</li>
+				</ul>
+			</div>
+			<p class="footer_intro">
+				小米公司版权所有-京ICP备10046444-
+				<a href="">
+					<span>
+						<img src="img/register/ghs.png" >
+					</span>
+					京公网安备11010802020134号
+				</a>
+				-京ICP证110507号
+			</p>
+		</div>
+	</body>
+</html>

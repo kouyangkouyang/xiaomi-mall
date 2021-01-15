@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小米商城</title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public_data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public-f.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	
+	<body>
+		<!-- 头部三个 -->
+		<div class="totalHead">
+			<!-- 顶部抽奖 -->
+			<div class="raffle">
+				<a href=""></a>
+			</div>
+			<div class="nav-top">
+				<div class="container">
+					<!-- 导航栏 -->
+					<div class="list">
+						<a href="">小米商城</a>
+						<span>|</span>
+						<a href="">MIUI</a>
+						<span>|</span>
+						<a href="">IoT</a>
+						<span>|</span>
+						<a href="">云服务</a>
+						<span>|</span>
+						<a href="">天星数科</a>
+						<span>|</span>
+						<a href="">有品</a>
+						<span>|</span>
+						<a href="">小爱开放平台</a>
+						<span>|</span>
+						<a href="">企业团购</a>
+						<span>|</span>
+						<a href="">资质证照</a>
+						<span>|</span>
+						<a href="">协议规则</a>
+						<span>|</span>
+						<a href="" class="download">
+							下载app
+							<span href=" "><!-- a链接不能套a链接 -->
+								<img src="img/download.png" width="90" height="90">
+								<span>小米商城APP</span>
+							</span>
+						</a>
+						<span>|</span>
+						<a href="">智能生活</a>
+						<span>|</span>
+						<a href="">Select Location</a>
+					</div>
+					<!-- 购物车 -->
+					<div class="buy">
+						<a class="hov" href="">
+							<i class="icon">&#xe652</i>
+							<span class="cartText">购物车</span>
+							<span class="cartNum">（0）</span>
+						</a>
+						<!-- 购物车隐藏区域 -->
+						<div class="cartHide">
+							
+							<div class="cart_logo"></div>
+							<div class="cart_text">购物车中还没有商品，赶紧选购吧！</div>
+						</div>
+					</div>
+					<!-- 登录注册 -->
+					<div class="sheet">
+						<a href="" class="login">登录</a>
+						<span>|</span>
+						<a href="" class="register">注册</a>
+						<span>|</span>
+						<a href="">消息通知</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav-mid">
+				<div class="container">
+					<!-- logo -->
+					<div class="logo">
+						<a href=""></a>
+					</div>
+					<!-- 动图 导航栏 -->
+					<div class="nav">
+						<ul>
+							<li class="perch">
+								<img src="img/f5.gif" >
+							</li>
+							<li>
+								<a href="">
+									<span>小米手机</span>
+								</a>
+								<!-- 导航栏 下拉列表 -->
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list phone"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>Redmi红米</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list red"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>电视</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list tel"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>笔记本</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list note"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>家电</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list elec"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>路由器</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list web"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>智能硬件</span>
+								</a>
+								<div class="itemChildren">
+									<div class="container">
+										<ul class="children_list smart"></ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<span>服务</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>社区</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 搜索框 -->
+					<div class="select">
+						<input type="submit" class="icon" value="&#xe619" />
+						<input type="text" class="text" placeholder="" />
+						<ul class="list"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 轮播图部分 -->
+		<div class="slide">
+			<div class="container">
+				<!-- 轮播图外框 -->
+				<div class="slide-box">
+					<!-- 轮播图部分 -->
+					<div class="slide-Show">
+						<div class="Show-img">
+							<a href="" class="act">
+								<img src="img/lb1.jpg" >
+							</a>
+							<a href="">
+								<img src="img/lb2.webp" >
+							</a>
+							<a href="">
+								<img src="img/lb3.webp" >
+							</a>
+							<a href="">
+								<img src="img/lb4.webp" >
+							</a>
+							<a href="">
+								<img src="img/lb5.webp" >
+							</a>
+						</div>
+						<div class="btn-small">
+							<span class="act"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="Show-btn rgt"></div>
+						<div class="Show-btn lft"></div>
+					</div>
+					<!-- 轮播区域列表js -->
+					<div class="slide-list">
+						<!-- 数据插入 -->
+					</div>
+				</div>
+				<!-- 轮播图下边四个框 -->
+				<div class="list">
+					<!-- 六个图标 -->
+					<div class="navi">
+						<ul>
+							<li class="item1">
+								<a href="">
+									<img src="img/logo1.png" alt="">
+									<span>小米秒杀</span>
+								</a>
+							</li>
+							<li class="item2">
+								<a href="">
+									<img src="img/logo2.png" alt="">
+									<span>企业团购</span>
+								</a>
+							</li>
+							<li class="item3">
+								<a href="">
+									<img src="img/logo3.png" alt="">
+									<span>F码通道</span>
+								</a>
+							</li>
+							</ul>
+							<ul>
+							<li class="item4">
+								<a href="">
+									<img src="img/logo4.png" alt="">
+									<span>米粉卡</span>
+								</a>
+							</li>
+							<li class="item5">
+								<a href="">
+									<img src="img/logo5.png" alt="">
+									<span>以旧换新</span>
+								</a>
+							</li>
+							<li class="item6">
+								<a href="">
+									<img src="img/logo6.png" alt="">
+									<span>话费充值</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 主推区域 -->
+					<div class="mainPush">
+						<div>
+							<a href="">
+								<img src="img/ban1.jpg" >
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<img src="img/ban2.jpg" >
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<img src="img/ban3.jpg" >
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<div class="container">
+				<!-- 小米选购轮播图 -->
+				<div class="iflashBuy">
+					<div class="tiltle">小米闪购</div>
+					<div class="carousel">
+						<!-- 按钮 -->
+						<div class="iflash-btn">
+							<span class="lft">
+								<input type="button" class="icon" value="&#xe856">
+							</span>
+							<span class="rgt">
+								<input type="button" class="icon" value="&#xe857">
+							</span>
+						</div>
+						<!-- 倒计时 -->
+						<div class="iflash-count">
+							<div class="round">17:00 场</div>
+							<img src="img/sd.png" >
+							<div class="desc">距离结束还有</div>
+							<div class="countdown">
+								<span class="hour">00</span>
+								<i>:</i>
+								<span class="min">00</span>
+								<i>:</i>
+								<span class="sec">00</span>
+							</div>
+						</div>
+						<!-- 轮播区域 -->
+						<div class="iflash-list">
+							<ul class="iflash-box">
+								<li class="iflash-child item1">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl1.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item2">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl2webp.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item3">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl3.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item4">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl3.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item5">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl5.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item6">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl6.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item7">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl8.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item8">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl8.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item9">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl9.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item10">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl10.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item11">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl11.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item12">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl12.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li class="iflash-child item13">
+									<a href="">
+										<div class="content">
+											<div class="thumb">
+												<img src="img/bl13.webp" width="160" height="160">
+											</div>
+											<h3 class="title">小米无线鼠标 Lite 黑色</h3>
+											<p class="desc">简约设计，轻盈握感</p>
+											<p class="price">
+												<span>29</span>元
+												<del>39元</del>
+											</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 横图banner -->
+				<div class="mainBanner">
+					<img src="img/ban1.webp" >
+				</div>
+				<!-- 手机区域 -->
+				<div class="cellphone">
+					<div class="tiltle">
+						<span>手机</span>
+						<div class="more">
+							<a href="">
+								<span>查看更多</span>
+								<i class="icon">
+									<span>&#xe852</span>
+								</i>
+							</a>
+						</div>
+					</div>
+					<div class="items">
+						<div class="long">
+							<img src="./img/sj.webp" >
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj1.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj2.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj7.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/sj8.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro 变焦版</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>3399</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- banner -->
+				<div class="mainBanner">
+					<img src="img/ban4.webp" >
+				</div>
+				<!-- 家电 -->
+				<div class="main-box home">
+					<div class="tiltle">
+						<span>家电</span>
+						<div class="more">
+							<ul class="more_list">
+								<li class="more_active">热门</li>
+								<li>电视影音</li>
+							</ul>
+						</div>
+					</div>
+					<div class="items">
+						<div class="head">
+							<div>
+								<a href="">
+									<img src="img/jd1.webp" >
+								</a>
+							</div>
+							<div>
+								<a href="">
+									<img src="img/jd6.webp" >
+								</a>
+							</div>
+						</div>
+						<div class="child_items list">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd2.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 红米电视 70英寸</div>
+										<div class="details">70英寸震撼巨屏，4K画质，细腻如真</div>
+										<div class="price">
+											<span>3199</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米全面屏电视E32C</div>
+										<div class="details">全面屏设计，人工智能系统</div>
+										<div class="price">
+											<span>899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米全面屏电视E55A</div>
+										<div class="details">全面屏设计，人工智能语音</div>
+										<div class="price">
+											<span>2199</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd5.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">米家空调</div>
+										<div class="details">出众静音，快速制冷热</div>
+										<div class="price">
+											<span>1499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd7.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">米家互联网洗烘一体机 Pro 10kg</div>
+										<div class="details">智能洗烘，省心省力</div>
+										<div class="price">
+											<span>3299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd8.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi全自动波轮洗衣机1A 8kg</div>
+										<div class="details">一键操作，父母都爱用</div>
+										<div class="price">
+											<span>799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd9.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">15.6" 四核i7 16G 独显 512G</div>
+										<div class="details">全面均衡的国民轻薄本</div>
+										<div class="price">
+											<span>4699</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd10.webp" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款 </div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="child_items list_hide">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy1.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米电视4C 32英寸</div>
+										<div class="details">高清液晶屏，人工智能系统</div>
+										<div class="price">
+											<span>899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy2.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">全面屏电视 55英寸E55X</div>
+										<div class="details">潮流全面屏设计</div>
+										<div class="price">
+											<span>2299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米电视4A 70英寸</div>
+										<div class="details">大屏更享受</div>
+										<div class="price">
+											<span>3199</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米电视4C 43英寸</div>
+										<div class="details">FHD全高清屏，钢琴烤漆</div>
+										<div class="price">
+											<span>1349</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy5.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米电视4S 75英寸</div>
+										<div class="details">4K HDR，人工智能语音</div>
+										<div class="price">
+											<span>4199</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米全面屏电视65英寸 E65C</div>
+										<div class="details">震撼大屏，时尚全面屏</div>
+										<div class="price">
+											<span>2799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy7.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米全面屏电视E32C</div>
+										<div class="details">全面屏设计，人工智能系统</div>
+										<div class="price">
+											<span>899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dsyy8.webp" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">小米壁画电视 65英寸</div>
+										<div class="price">
+											<span>6999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">电视影音</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- banner -->
+				<div class="mainBanner">
+					<img src="img/ban5.webp" >
+				</div>
+				<!-- 智能 -->
+				<div class="main-box smart">
+					<div class="tiltle">
+						<span>智能</span>
+						<div class="more">
+							<ul class="more_list">
+								<li class="more_active">热门</li>
+								<li>安防</li>
+								<li>出行</li>
+							</ul>
+						</div>
+					</div>
+					<div class="items">
+						<div class="head">
+							<div>
+								<a href="">
+									<img src="img/zn1.webp" >
+								</a>
+							</div>
+							<div>
+								<a href="">
+									<img src="img/zn2.webp" >
+								</a>
+							</div>
+						</div>
+						<div class="child_items list">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn7.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn8.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn9.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zn10.jpg" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款</div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="child_items list_hide">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af1.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af2.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af7.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/af8.jpg" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款</div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="child_items list_hide h">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zncx1.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zncx2.png" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zncx3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zncx4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zncx5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zncx6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zncx7.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- banner -->
+				<div class="mainBanner">
+					<img src="img/ban6.webp" >
+				</div>
+				<!-- 搭配 -->
+				<div class="main-box match">
+					<div class="tiltle">
+						<span>搭配</span>
+						<div class="more">
+							<ul class="more_list">
+								<li class="more_active">热门</li>
+								<li>耳机音箱</li>
+							</ul>
+						</div>
+					</div>
+					<div class="items">
+						<div class="head">
+							<div>
+								<a href="">
+									<img src="img/dp1.webp" >
+								</a>
+							</div>
+							<div>
+								<a href="">
+									<img src="img/dp2.webp" >
+								</a>
+							</div>
+						</div>
+						<div class="child_items list">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp7.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp8.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp9.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp10.webp" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款</div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="child_items list_hide">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx1.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx2.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx7.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/ejyx8.jpg" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款</div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- banner -->
+				<div class="mainBanner">
+					<img src="img/ban7.webp" >
+				</div>
+				<!-- 配件 -->
+				<div class="main-box parts">
+					<div class="tiltle">
+						<span>配件</span>
+						<div class="more">
+							<ul class="more_list">
+								<li class="more_active">热门</li>
+								<li>充电器</li>
+							</ul>
+						</div>
+					</div>
+					<div class="items">
+						<div class="head">
+							<div>
+								<a href="">
+									<img src="img/pj11.webp" >
+								</a>
+							</div>
+							<div>
+								<a href="">
+									<img src="img/pj12.webp" >
+								</a>
+							</div>
+						</div>
+						<div class="child_items list">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp7.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp8.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp9.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/dp10.webp" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款</div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="child_items list_hide">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq1.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq2.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq6.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq7.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/cdq8.jpg" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款</div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- banner -->
+				<div class="mainBanner">
+					<img src="img/ban8.webp" >
+				</div>
+				<!-- 周边 -->
+				<div class="main-box rim">
+					<div class="tiltle">
+						<span>周边</span>
+						<div class="more">
+							<ul class="more_list">
+								<li class="more_active">热门</li>
+								<li>出行</li>
+							</ul>
+						</div>
+					</div>
+					<div class="items">
+						<div class="head">
+							<div>
+								<a href="">
+									<img src="img/zb1.webp" >
+								</a>
+							</div>
+							<div>
+								<a href="">
+									<img src="img/zb2.webp" >
+								</a>
+							</div>
+						</div>
+						<div class="child_items list">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zb3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zb4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zb5.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zb6.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zb7.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zb8.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="child_items list_hide">
+							<ul>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx1.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 至尊版</div>
+										<div class="details">120X 变焦/120W秒充/120Hz屏幕</div>
+										<div class="price">
+											<span>5299</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx2.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 至尊版</div>
+										<div class="details">120Hz弹出全面屏，天玑1000+旗舰处理器</div>
+										<div class="price">
+											<span>1999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx3.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">腾讯黑鲨3S</div>
+										<div class="details">骁龙865处理器，120Hz刷新率</div>
+										<div class="price">
+											<span>3999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx4.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi 9A</div>
+										<div class="details">5000mAh长循环大电量，6.53"超大护眼屏幕</div>
+										<div class="price">
+											<span>599</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx5.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10 青春版 5G</div>
+										<div class="details">50倍潜望式变焦 / 轻薄5G手机</div>
+										<div class="price">
+											<span>1899</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx6.jpg" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">小米10</div>
+										<div class="details">骁龙865/1亿像素相机</div>
+										<div class="price">
+											<span>3799</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx7.webp" style="width: 160px; height: 160px;">
+										</div>
+										<div class="title">Redmi K30 Pro</div>
+										<div class="details">双模5G，骁龙865，弹出全面屏</div>
+										<div class="price">
+											<span>2999</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="pic">
+											<img src="img/zbcx8.webp" style="width: 80px; height: 80px;">
+										</div>
+										<div class="title">Air 13.3" 2019款</div>
+										<div class="price">
+											<span>5499</span>
+											<span>元</span>
+											<span>起</span>
+										</div>
+									</a>
+									<a href="">
+										<div class="pic">
+											<img src="img/jd.PNG" style="width: 60px; height: 60px;">
+										</div>
+										<div class="title-cn">浏览更多</div>
+										<div class="cn">热门</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- banner -->
+				<div class="mainBanner">
+					<img src="img/ban9.webp" >
+				</div>
+				<!-- 视频 -->
+				<div class="video">
+					<div class="tiltle">
+						<span>视频</span>
+						<div class="more">
+							<a href="">
+								<span>查看更多</span>
+								<i class="icon">
+									<span>&#xe852</span>
+								</i>
+							</a>
+						</div>
+					</div>
+					<div class="items">
+						<div>
+							<a href="">
+								<div>
+									<img src="img/zhanwei.PNG" style="width:296px; height:180px">
+								</div>
+								<div class="title">Redmi 10X系列发布会</div>
+								<div class="desc">Redmi 10X系列发布会</div>
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<div>
+									<img src="img/zhanwei.PNG" style="width:296px; height:180px">
+								</div>
+								<div class="title">Redmi 10X系列发布会</div>
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<div>
+									<img src="img/zhanwei.PNG" style="width:296px; height:180px">
+								</div>
+								<div class="title">Redmi 10X系列发布会</div>
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<div>
+									<img src="img/zhanwei.PNG" style="width:296px; height:180px">
+								</div>
+								<div class="title">Redmi 10X系列发布会</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 脚部 -->
+		<div class="footer">
+			<div class="container">
+				<!-- icon区域 -->
+				<div class="top">
+					<ul>
+						<li>
+							<a href="">
+								<i class="icon">&#xe629</i>
+								<span>预约维修服务</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe60e</i>
+								<span>7天无理由退货</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe606</i>
+								<span>15天免费换货</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe624</i>
+								<span>满99元包邮</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon">&#xe653</i>
+								<span>520余家售后网点</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 信息列表 -->
+				<div class="bot">
+					<div class="help">
+						<ul>
+							<div>帮助中心</div>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">购物指南</a></li>
+							<li><a href="">订单操作</a></li>
+						</ul>
+						<ul>
+							<div>服务支持</div>
+							<li><a href="">售后政策</a></li>
+							<li><a href="">自助服务</a></li>
+							<li><a href="">相关下载</a></li>
+						</ul>
+						<ul>
+							<div>线下门店</div>
+							<li><a href="">小米之家</a></li>
+							<li><a href="">服务网点</a></li>
+							<li><a href="">授权体验店</a></li>
+						</ul>
+						<ul>
+							<div>关于小米</div>
+							<li><a href="">了解小米</a></li>
+							<li><a href="">加入小米</a></li>
+							<li><a href="">投资者关系</a></li>
+							<li><a href="">企业社会责任</a></li>
+							<li><a href="">廉洁举报</a></li>
+						</ul>
+						<ul>
+							<div>关注我们</div>
+							<li><a href="">新浪微博</a></li>
+							<li><a href="">官方微信</a></li>
+							<li><a href="">联系我们</a></li>
+							<li><a href="">公益基金会</a></li>
+						</ul>
+						<ul>
+							<div>特色服务</div>
+							<li><a href="">F码通道</a></li>
+							<li><a href="">礼物码</a></li>
+							<li><a href="">防伪查询</a></li>
+						</ul>
+					</div>
+					<!-- 热线 -->
+					<div class="hotLine">
+						<ul>
+							<li>400-100-5678</li>
+							<li>8:00-18:00（仅收市话费）</li>
+							<li>
+								<input type="button" value="&#xe61b 人工客服" class="icon"/>
+							</li>
+							<li class="logo">
+								<span>关注小米：</span>
+								<a class="wb" href=""></a>
+								<a class="wx" href=""></a>
+								<img src="img/wx-img.png" >
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 版权信息 -->
+		<div class="copy">
+			<div class="container">
+				<div class="logo">
+					<img src="img/lo.PNG" >
+				</div>
+				<div class="copyRight">
+					<!-- 脚部导航 -->
+					<div class="nav">
+						<a href="">小米商城</a>
+						<span>|</span>
+						<a href="">MIUI</a>
+						<span>|</span>
+						<a href="">米家</a>
+						<span>|</span>
+						<a href="">米聊</a>
+						<span>|</span>
+						<a href="">多看</a>
+						<span>|</span>
+						<a href="">游戏</a>
+						<span>|</span>
+						<a href="">政企服务</a>
+						<span>|</span>
+						<a href="">小米天猫店</a>
+						<span>|</span>
+						<a href="">小米集团隐私政策</a>
+						<span>|</span>
+						<a href="">小米公司儿童信息保护规则</a>
+						<span>|</span>
+						<a href="">小米商城隐私政策</a>
+						<span>|</span>
+						<a href="">小米商城用户协议</a>
+						<span>|</span>
+						<a href="">问题反馈</a>
+						<span>|</span>
+						<a href="">Select Location</a>
+					</div>
+					<!-- 版权信息 -->
+					<div class="cpr">
+						<ul>
+							<li><a href="">© mi.com</a></li>
+							<li>京ICP证110507号</li>
+							<li><a href="">京ICP备10046444号</a></li>
+							<li><a href="">京公网安备11010802020134号</a></li>
+							<li><a href="">京网文[2020]0276-042号</a></li>
+						</ul>
+						<ul>
+							<li><a href="">（京）网械平台备字（2018）第00005号</a></li>
+							<li><a href="">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a></li>
+							<li><a href="">营业执照</a></li>
+							<li><a href="">医疗器械质量公告</a></li>
+						</ul>
+						<ul>
+							<li><a href="">增值电信业务许可证</a></li>
+							<li>网络食品经营备案</li>
+							<li>京食药网食备202010048</li>
+							<li><a href="">食品经营许可证</a></li>
+						</ul>
+						<ul>
+							<li>违法和不良信息举报电话：171-5104-4404</li>
+							<li><a href="">知识产权侵权投诉</a></li>
+							<li>本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pic">
+					<div>
+						<img src="img/truste.png" width="83px" height="28px">
+					</div>
+					<div>
+						<img src="img/v-logo-2.png" width="83px" height="28px">
+					</div>
+					<div>
+						<img src="img/v-logo-1.png" width="83px" height="28px">
+					</div>
+					<div>
+						<img src="./img/ba10428a4f9495ac310fd0b5e0cf8370.png" width="83px" height="28px">
+					</div>
+					<div class="footer_log">
+						<img src="./img/ad.png" >
+					</div>
+				</div>
+				<div class="footer_logo">
+					
+				</div>
+			</div>
+		</div>
+		<!-- 固定侧边栏 -->
+		<div class="sidebar">
+			<a href="" class="items phone">
+				<div class="icon icon-image">
+					<img src="img/fix1.png" class="common" width="20" height="20px">
+					<img src="img/fix2.png" class="hov" width="20" height="20px">
+				</div>
+				<div class="text_content">
+					<img src="img/saomc.png" >
+					<span>扫码领取新</span>
+					<span>人百元礼包</span>
+				</div>
+			</a>
+			<a href="" class="items person-cen">
+				<div class="icon">
+					<img src="img/fix3.png" class="common" width="20" height="20px">
+					<img src="img/fix4.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">个人中心</span>
+			</a>
+			<a href="" class="items">
+				<div class="icon">
+					<img src="img/fix5.png" class="common" width="20" height="20px">
+					<img src="img/fix6.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">售后服务</span>
+			</a>
+			<a href="" class="items">
+				<div class="icon">
+					<img src="img/fix7.png" class="common" width="20" height="20px">
+					<img src="img/fix8.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">人工客服</span>
+			</a>
+			<a href="" class="items buy-car">
+				<div class="icon">
+					<img src="img/fix9.png" class="common" width="20" height="20px">
+					<img src="img/fix10.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">
+					购物车<span>(0)</span>
+				</span>
+			</a>
+			<a href="" class="items last">
+				<div class="icon">
+					<img src="img/totop.png" class="common" width="20" height="20px">
+					<img src="img/totop_hover.png" class="hov" width="20" height="20px">
+				</div>
+				<span class="text">回顶部</span>
+			</a>
+		</div>
+	</body>
+</html>

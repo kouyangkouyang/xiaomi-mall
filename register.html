@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米账号-登录</title>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public-f.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="head">
+				<a href="">
+					<img src="img/register/mistore_logo.png" >
+				</a>
+			</div>
+			<div class="banner-box">
+				<a href="" class="ban"></a>
+				<!-- 登录表单区域 -->
+				<div class="layout">
+					<div class="main-content">
+						<div class="mainbox-form">
+							<!-- 表单标题 -->
+							<div class="tabs-nav-box">
+								<div class="tabs-nav">
+									<p class="navtab-link now" data-tab = 'pwd'>帐号登录</p>
+									<span class="line"></span>
+									<p class="navtab-link" data-tab = 'qr'>扫码登录</p>
+								</div>
+							</div>
+							<!-- 表单内容 -->
+							<div class="tabs-con now">
+								<div class="login_area">
+									<div class="loginbox">
+										<!-- 输入框 -->
+										<!-- 密码登录 -->
+										<div class="lgn_input pwdLogin">
+											
+											<label class="labelbox login_user">
+												<input type="text" name="user" id="username" placeholder="邮箱/手机号码/小米ID" autocomplete="off"/>
+											</label>
+											
+											<label class="labelbox login_pwd">
+												<input type="password" name="password" id="pwd" placeholder="密码" autocomplete="off"/>
+											</label>
+										</div>
+										<!-- 短信登录 -->
+										<div class="lgn_input textLogin">
+											
+											<label class="labelbox login_phone">
+												<div class="country-list">
+													<span class="country_code">+86</span>
+												</div>
+												<input type="tel" name="user" id="tel" placeholder="手机号码" autocomplete="off"/>
+											</label>
+											
+											<label class="labelbox login_code">
+												<input type="text" name="text" id="code" placeholder="短信验证码" autocomplete="off"/>
+												<div class="code-box">
+													<a class="send_ticket" id="getSMSCode">获取验证码</a>
+												</div>
+											</label>
+										</div>
+										<!-- 错误信息 -->
+										<div class="err_tip">
+											<div>
+												<i class="icon"></i>
+												<span class="err-con"></span>
+											</div>
+										</div>
+										<!-- 提交 -->
+										<div class="btns">
+											<input class="lgn_btn pwdBtn" type="button" value="登录" />
+											<input class="lgn_btn textBtn" type="button" value="立即登录注册" />
+										</div>
+										<!-- 其他信息 -->
+										<div class="other_box">
+											<span class="sms_link">
+												<p href="">手机短信登录/注册</p>
+											</span>
+											<div class="reverse">
+												<!-- 注册登录 -->
+												<div class="links_area reg_login">
+													<a href="" class="other-link">立即注册</a>
+													<span>|</span>
+													<a href="" class="other-link">忘记密码？</a>
+												</div>
+												<!-- 手机短信登录 -->
+												<div class="links_area sms_login">
+													<a href="">忘记验证码？</a>
+												</div>
+											</div>
+											<!-- 其他登录方式 -->
+											<div class="other_login">
+												<div class="oth_type">
+													<a href="" title="QQ登录" class="icon_type btn_qq">
+														<i class="btn_icontype icon_qq"></i>
+													</a>
+													<a href="" title="微博登录" class="icon_type btn_weibo">
+														<i class="btn_icontype icon_weibo"></i>
+													</a>
+													<a href="" title="支付宝登录" class="icon_type btn_alipay">
+														<i class="btn_icontype icon_alipay"></i>
+													</a>
+													<a href="" title="微信登录" class="icon_type btn_wx">
+														<i class="btn_icontype icon_wx"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 扫码 -->
+						<div class="ercode_area">
+							<div class="ercode-pannel">
+								<div class="ercode-box">
+									<div class="code_hd">
+										<p>请使用小米手机/米家等小米旗下APP扫码登录<i class="icon_help"></i></p>
+									</div>
+									<div class="code_iframe">
+										<img src="img/register/ercode.png" >
+									</div>
+									<div class="code_txt">
+										<p class="txt-app">
+											使用<span>小米商城APP</span>扫一扫
+										</p>
+										<p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="custom_footer">
+			<div class="footer_link">
+				<ul class="footer_list">
+					<li>
+						<a href="" class="list_li current">简体</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">繁体</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">English</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">常见问题</a>|
+					</li>
+					<li>
+						<a href="" class="list_li">隐私政策</a>
+					</li>
+				</ul>
+			</div>
+			<p class="footer_intro">
+				小米公司版权所有-京ICP备10046444-
+				<a href="">
+					<span>
+						<img src="img/register/ghs.png" >
+					</span>
+					京公网安备11010802020134号
+				</a>
+				-京ICP证110507号
+			</p>
+		</div>
+	</body>
+</html>

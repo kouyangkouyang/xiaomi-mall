@@ -1,0 +1,42 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.w-cont{
+	max-width: 1600px;
+	min-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6,em{
+	font-style: normal;
+	font-weight: 400;
+}
+b{
+	font-style: normal;
+}
+i{
+	font-style: normal;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: '';
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+
+
+
